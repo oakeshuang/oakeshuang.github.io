@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>朝闻夕死</title>
+  
+  <subtitle>古人贵朝闻夕死，况君前途尚可。且人患志之不立，亦何忧令名不彰邪？</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="https://oakeshuang.github.io/"/>
+  <updated>2018-09-20T08:17:45.503Z</updated>
+  <id>https://oakeshuang.github.io/</id>
+  
+  <author>
+    <name>JunJiaHuang</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>h1802</title>
+    <link href="https://oakeshuang.github.io/2018/09/20/%E4%BD%9C%E4%B8%9A/"/>
+    <id>https://oakeshuang.github.io/2018/09/20/作业/</id>
+    <published>2018-09-20T04:34:14.000Z</published>
+    <updated>2018-09-20T08:17:45.503Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="复习今天讲的知识点"><a href="#复习今天讲的知识点" class="headerlink" title="复习今天讲的知识点"></a>复习今天讲的知识点</h3><ol><li>微信小程序介绍及基本使用</li><li>微信小程序框架</li><li>微信小程序组件</li></ol><h3 id="必须完成的作业题目"><a href="#必须完成的作业题目" class="headerlink" title="必须完成的作业题目"></a>必须完成的作业题目</h3><ol><li>将课件打一遍（每次打完一个效果在浏览器查看）</li></ol><h3 id="预习下次课讲的知识点"><a href="#预习下次课讲的知识点" class="headerlink" title="预习下次课讲的知识点"></a>预习下次课讲的知识点</h3><ol><li>微信小程序组件</li><li>微信小程序api</li></ol>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h3 id=&quot;复习今天讲的知识点&quot;&gt;&lt;a href=&quot;#复习今天讲的知识点&quot; class=&quot;headerlink&quot; title=&quot;复习今天讲的知识点&quot;&gt;&lt;/a&gt;复习今天讲的知识点&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;微信小程序介绍及基本使用&lt;/li&gt;
+&lt;li&gt;微信小程序框架&lt;/li&gt;
+&lt;
+      
+    
+    </summary>
+    
+    
+      <category term="作业" scheme="https://oakeshuang.github.io/tags/%E4%BD%9C%E4%B8%9A/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hexo的基本使用</title>
+    <link href="https://oakeshuang.github.io/2018/09/20/Hexo%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/"/>
+    <id>https://oakeshuang.github.io/2018/09/20/Hexo的基本使用/</id>
+    <published>2018-09-20T03:56:49.287Z</published>
+    <updated>2018-09-20T10:02:03.001Z</updated>
+    
+    <content type="html"><![CDATA[<p><strong><a href="https://hexo.io/" title="hexo官网" target="_blank" rel="noopener">Hexo</a> 官网</strong></p><h3 id="1-本地安装"><a href="#1-本地安装" class="headerlink" title="1. 本地安装"></a>1. 本地安装</h3><pre><code>npm install -g hexo</code></pre><h3 id="2-本地创建博客"><a href="#2-本地创建博客" class="headerlink" title="2. 本地创建博客"></a>2. 本地创建博客</h3><p>初始化</p><pre><code>hexo init</code></pre><p>生成的文件：</p><pre><code>node_modules：是依赖包public：存放的是生成的页面scaffolds：命令生成文章等的模板source：用命令创建的各种文章themes：主题_config.yml：整个博客的配置db.json：source解析所得到的package.json：项目所需模块项目的配置信息</code></pre><h3 id="3-github上搭建好自己的-博客，如-yourname-github-io"><a href="#3-github上搭建好自己的-博客，如-yourname-github-io" class="headerlink" title="3. github上搭建好自己的 博客，如 yourname.github.io"></a>3. github上搭建好自己的 博客，如 yourname.github.io</h3><p><a href="https://blog.csdn.net/huangyabin001/article/details/35557231" title="有两篇，在后面" target="_blank" rel="noopener">如何搭建自己的github博客</a></p><h3 id="4-配置"><a href="#4-配置" class="headerlink" title="4. 配置"></a>4. 配置</h3><p>修改_config.yml文件的一些配置</p><p>注意：冒号之后都是有一个半角空格的</p><pre><code>deploy:type: gitrepo: https://github.com/YourgithubName/YourgithubName.github.io.git</code></pre><h3 id="5-安装本地预览包以及博客上传包"><a href="#5-安装本地预览包以及博客上传包" class="headerlink" title="5. 安装本地预览包以及博客上传包"></a>5. 安装本地预览包以及博客上传包</h3><p>安装hexo本地服务器,用于本地预览</p><pre><code>npm i hexo-server</code></pre><p>推送博客到github</p><pre><code>npm install hexo-deployer-git --save</code></pre><h3 id="6-创建一篇文章-More"><a href="#6-创建一篇文章-More" class="headerlink" title="6. 创建一篇文章  More"></a>6. 创建一篇文章  <a href="https://hexo.io/docs/writing.html" title="更多说明" target="_blank" rel="noopener">More</a></h3><pre><code>hexo new 文章名</code></pre><h3 id="7-本地预览-More"><a href="#7-本地预览-More" class="headerlink" title="7. 本地预览 More"></a>7. 本地预览 <a href="https://hexo.io/docs/server.html" title="更多说明" target="_blank" rel="noopener">More</a></h3><pre><code>hexo server</code></pre><h3 id="8-生成静态文件-More"><a href="#8-生成静态文件-More" class="headerlink" title="8. 生成静态文件 More"></a>8. 生成静态文件 <a href="https://hexo.io/docs/generating.html" title="更多说明" target="_blank" rel="noopener">More</a></h3><pre><code>hexo generate</code></pre><h3 id="9-推送到github-More"><a href="#9-推送到github-More" class="headerlink" title="9. 推送到github More"></a>9. 推送到github <a href="https://hexo.io/docs/deployment.html" title="更多说明" target="_blank" rel="noopener">More</a></h3><pre><code>hexo deploy    </code></pre><h3 id="10-一般操作"><a href="#10-一般操作" class="headerlink" title="10. 一般操作"></a>10. 一般操作</h3><pre><code>hexo clean // 清除原来生成的文件hexo generate // 重新生成文件hexo server    // 本地预览hexo clean // 清除原来生成的文件hexo generate // 重新生成文件hexo deploy    // 推送到github</code></pre><h3 id="11-配置到package-json"><a href="#11-配置到package-json" class="headerlink" title="11. 配置到package.json"></a>11. 配置到package.json</h3><p>添加以下代码：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">...</span><br><span class="line">&quot;scripts&quot;: &#123;</span><br><span class="line">&quot;dev&quot;: &quot;hexo clean &amp;&amp; hexo generate &amp;&amp; hexo server&quot;,</span><br><span class="line">&quot;pro&quot;: &quot;hexo clean &amp;&amp; hexo generate &amp;&amp; hexo deploy&quot;</span><br><span class="line">&#125;,</span><br><span class="line">...</span><br></pre></td></tr></table></figure></p><h3 id="12-更多修改"><a href="#12-更多修改" class="headerlink" title="12. 更多修改"></a>12. 更多修改</h3><h4 id="1-修改语言包"><a href="#1-修改语言包" class="headerlink" title="1. 修改语言包"></a>1. 修改语言包</h4><p>配置文件在<code>_config.yml</code> ，一般的网站设置都在这里改，比如：改语言包，网站标题，作者等</p><h4 id="2-生成自定义模板文件"><a href="#2-生成自定义模板文件" class="headerlink" title="2. 生成自定义模板文件"></a>2. 生成自定义模板文件</h4><p>可以在scaffokds里面自定义一个自己的模板文件，然后执行 <code>hexo new 模板文件名 生成的文件名</code>， </p><p>会按照模板文件里面的配置生成一个模板到生成的文件里面</p><h4 id="3-替换头部背景图片"><a href="#3-替换头部背景图片" class="headerlink" title="3. 替换头部背景图片"></a>3. 替换头部背景图片</h4><p><code>themes/source/css/header/styl 26行</code> 图片在images下</p><h4 id="4-改尾部签名"><a href="#4-改尾部签名" class="headerlink" title="4. 改尾部签名"></a>4. 改尾部签名</h4><p><code>themes/layout/_partial/footer.ejs</code></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;strong&gt;&lt;a href=&quot;https://hexo.io/&quot; title=&quot;hexo官网&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt; 官网&lt;/strong&gt;&lt;/p&gt;
+&lt;h3 id=&quot;1-本地安装&quot;&gt;&lt;a href=&quot;#1-本地安
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+</feed>
