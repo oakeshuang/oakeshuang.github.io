@@ -197,6 +197,7 @@ body {
   color: #999;
   margin-bottom: 1em;
   margin-left: 5px;
+  margin-right: 5px;
   line-height: 1em;
   text-shadow: 0 1px #fff;
   font-weight: bold;
@@ -520,6 +521,10 @@ body {
 }
 .article-date {
   float: left;
+}
+.article-click {
+  color: #999;
+  line-height: 1em;
 }
 .article-category {
   float: left;
