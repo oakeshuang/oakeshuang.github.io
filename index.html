@@ -24,6 +24,7 @@
     <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
   
   <link rel="stylesheet" href="/css/style.css">
+  <script src="/js/jquery.min.js"></script>
 </head>
 
 <body>
@@ -72,6 +73,7 @@
   <time datetime="2018-09-20T04:34:14.000Z" itemprop="datePublished">2018-09-20</time>
 </a>
     
+    阅读数量:<span id="/2018/09/20/作业/" class="leancloud_visitors" data-flag-title="h1802"></span>次
   </div>
   <div class="article-inner">
     
@@ -104,7 +106,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://oakeshuang.github.io/2018/09/20/作业/" data-id="cjmaibbs1000028izl7soh7re" class="article-share-link">Share</a>
+      <a data-url="https://oakeshuang.github.io/2018/09/20/作业/" data-id="cjmam3usa0000v4izq3c3hz6c" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/作业/">作业</a></li></ul>
@@ -115,6 +117,25 @@
 </article>
 
 
+
+<!-- 来必力City版安装代码 -->
+<div id="lv-container" data-id="city" data-uid="MTAyMC8zOTg1Ni8xNjM4Mw==">
+	<script type="text/javascript">
+   (function(d, s) {
+       var j, e = d.getElementsByTagName(s)[0];
+
+       if (typeof LivereTower === 'function') { return; }
+
+       j = d.createElement(s);
+       j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+       j.async = true;
+
+       e.parentNode.insertBefore(j, e);
+   })(document, 'script');
+	</script>
+<noscript> 为正常使用来必力评论功能请激活JavaScript</noscript>
+</div>
+<!-- City版安装代码已完成 -->
   
     <article id="post-Hexo的基本使用" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
@@ -122,6 +143,7 @@
   <time datetime="2018-09-20T03:56:49.287Z" itemprop="datePublished">2018-09-20</time>
 </a>
     
+    阅读数量:<span id="/2018/09/20/Hexo的基本使用/" class="leancloud_visitors" data-flag-title="Hexo的基本使用"></span>次
   </div>
   <div class="article-inner">
     
@@ -182,7 +204,7 @@ hexo deploy    // 推送到github
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://oakeshuang.github.io/2018/09/20/Hexo的基本使用/" data-id="cjmaibbvj000328iz9nk6kd71" class="article-share-link">Share</a>
+      <a data-url="https://oakeshuang.github.io/2018/09/20/Hexo的基本使用/" data-id="cjmam3ut60001v4izg9vo7kwm" class="article-share-link">Share</a>
       
       
     </footer>
@@ -191,6 +213,25 @@ hexo deploy    // 推送到github
 </article>
 
 
+
+<!-- 来必力City版安装代码 -->
+<div id="lv-container" data-id="city" data-uid="MTAyMC8zOTg1Ni8xNjM4Mw==">
+	<script type="text/javascript">
+   (function(d, s) {
+       var j, e = d.getElementsByTagName(s)[0];
+
+       if (typeof LivereTower === 'function') { return; }
+
+       j = d.createElement(s);
+       j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+       j.async = true;
+
+       e.parentNode.insertBefore(j, e);
+   })(document, 'script');
+	</script>
+<noscript> 为正常使用来必力评论功能请激活JavaScript</noscript>
+</div>
+<!-- City版安装代码已完成 -->
   
 
 
@@ -257,10 +298,59 @@ hexo deploy    // 推送到github
   <div class="outer">
     <div id="footer-info" class="inner">
       &copy; 2018 JunJiaHuang<br>
-      Powered by <a href="https://oakeshuang.github.io/" target="_blank">JunJiaHuang</a>
+      Powered by <a href="//hexo.io/" target="_blank">Hexo</a>
+      <br />
+      <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+      <span id="busuanzi_container_site_pv">本站总访问量<span id="busuanzi_value_site_pv"></span>次</span>
     </div>
   </div>
 </footer>
+
+
+
+
+  <script src="//cdn1.lncld.net/static/js/2.5.0/av-min.js"></script>
+  <script>
+      var APP_ID = 'xQeYBgW06GWqOKdj4XsVtekg-gzGzoHsz';
+      var APP_KEY = 'fGMmOiCrbrJ4G01gIFw8uctS';
+      AV.init({
+          appId: APP_ID,
+          appKey: APP_KEY
+      });
+      // 显示次数
+      function showTime(Counter) {
+          var query = new AV.Query("Counter");
+          if($(".leancloud_visitors").length > 0){
+              var url = $(".leancloud_visitors").attr('id').trim();
+              // where field
+              query.equalTo("words", url);
+              // count
+              query.count().then(function (number) {
+                  // There are number instances of MyClass where words equals url.
+                  $(document.getElementById(url)).text(number?  number : '--');
+              }, function (error) {
+                  // error is an instance of AVError.
+              });
+          }
+      }
+      // 追加pv
+      function addCount(Counter) {
+          var url = $(".leancloud_visitors").length > 0 ? $(".leancloud_visitors").attr('id').trim() : 'icafebolger.com';
+          var Counter = AV.Object.extend("Counter");
+          var query = new Counter;
+          query.save({
+              words: url
+          }).then(function (object) {
+          })
+      }
+      $(function () {
+          var Counter = AV.Object.extend("Counter");
+          addCount(Counter);
+          showTime(Counter);
+      });
+  </script>
+
+
     </div>
     <nav id="mobile-nav">
   
@@ -271,7 +361,6 @@ hexo deploy    // 推送到github
 </nav>
     
 
-<script src="/js/jquery.min.js"></script>
 
 
   <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
@@ -279,7 +368,6 @@ hexo deploy    // 推送到github
 
 
 <script src="/js/script.js"></script>
-
 
 
   </div>
