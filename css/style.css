@@ -525,6 +525,8 @@ body {
 .article-click {
   color: #999;
   line-height: 1em;
+  float: left;
+  margin-right: 15px;
 }
 .article-category {
   float: left;
